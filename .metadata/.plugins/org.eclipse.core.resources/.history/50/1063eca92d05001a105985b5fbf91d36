@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MSite">
+
+<listeners>
+		<listener class-name="com.Msite.Utilities.Reporting" />
+	</listeners>
+	
+    <!--    <test name="LoginPageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.LoginPageTest">
+             </class>
+    </classes>
+  </test>  -->
+   <!--  <test name="DashboardPageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.DashboardPageTest">
+             </class>
+    </classes>
+  </test> --> 
+
+   <!-- <test name="ContractorsPageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.ContractorsPageTest">
+      </class>
+    </classes>
+  </test> -->
+   
+   <test name="EmployeesPageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.EmployeesPageTest">  
+      </class>
+    </classes>
+  </test>
+  
+     <!--  <test name="TrainingClassroomPageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.TrainingClassroomPageTest"/>
+    </classes>
+  </test>   
+  <test name="TrainingOnlinePageTest">
+  <parameter name ="browser" value ="firefox"/>
+    <classes>
+     <class name="com.Msite.TestScripts.TrainingOnlinePageTest">  
+      </class>
+    </classes>
+  </test>     -->
+  -->
+
+</suite>

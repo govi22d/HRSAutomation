@@ -1,0 +1,1010 @@
+<html>
+<head>
+<title>TestNG:  TrainingOnlinePageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TrainingOnlinePageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>56/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 12 16:39:31 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>1313 seconds (1313740 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Delete_InDeleteCourse()'><b>onlineTraining_Delete_InDeleteCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-730372820" onClick='toggleBox("Output-730372820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-730372820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-730372820">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and Open A course<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-primary&apos;]&quot;}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-CS50U47&apos;, ip: &apos;192.168.0.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a77eb7510366c8fcfcb4bad2ff359707
+*** Element info: {Using=xpath, value=//button[@class=&apos;btn btn-primary&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Msite.TestScripts.BaseClass.isElementPresentByXpath(BaseClass.java:163)
+	at com.Msite.TestScripts.BaseClass.FindElement(BaseClass.java:196)
+	at com.Msite.Pages.TrainingOnlinePage.onlineTraining_DeleteCourse(TrainingOnlinePage.java:1192)
+	at com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Delete_InDeleteCourse(TrainingOnlinePageTest.java:792)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730372820", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730372820'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn btn-primary&apos;]&quot;}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-CS50U47&apos;, ip: &apos;192.168.0.127&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a77eb7510366c8fcfcb4bad2ff359707
+*** Element info: {Using=xpath, value=//button[@class=&apos;btn btn-primary&apos;]}
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.Msite.TestScripts.BaseClass.isElementPresentByXpath(BaseClass.java:163)
+	at com.Msite.TestScripts.BaseClass.FindElement(BaseClass.java:196)
+	at com.Msite.Pages.TrainingOnlinePage.onlineTraining_DeleteCourse(TrainingOnlinePage.java:1192)
+	at com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Delete_InDeleteCourse(TrainingOnlinePageTest.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>35</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddEmptyCourse_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_AddEmptyCourse_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1773266795" onClick='toggleBox("Output-1773266795", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1773266795" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1773266795">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Ading A Empty New Course ,All Mandatory Fields are Highlighted in Red Color<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddQuestion_Added()'><b>onlineTraining_AddANewOnlineCoures_AddQuestion_Added</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-540585543" onClick='toggleBox("Output-540585543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-540585543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540585543">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Added in Add New Question Dialog,Dialog is Closed and Question is Created<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddQuestion_Cancel_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_AddQuestion_Cancel_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1704704942" onClick='toggleBox("Output-1704704942", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1704704942" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1704704942">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Cancel in Add New Question Dialog,Dialog is Closed and No Question is Created<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddQuestion_OnlyOneAnswerSelected()'><b>onlineTraining_AddANewOnlineCoures_AddQuestion_OnlyOneAnswerSelected</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-57305467" onClick='toggleBox("Output-57305467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-57305467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-57305467">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying Only One Answer is selected at atime in Add New Question Dailog<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddQuestion_UnableToSelectBlankAnswer()'><b>onlineTraining_AddANewOnlineCoures_AddQuestion_UnableToSelectBlankAnswer</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-665054871" onClick='toggleBox("Output-665054871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-665054871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-665054871">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Checking Selection of inactive Answer Selection<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddSection_Added()'><b>onlineTraining_AddANewOnlineCoures_AddSection_Added</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-817326538" onClick='toggleBox("Output-817326538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-817326538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-817326538">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Add in Add New Section Dialog,Dialog is Closed and  Section is Created<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_AddSection_Cancel_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_AddSection_Cancel_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-374670095" onClick='toggleBox("Output-374670095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-374670095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-374670095">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page,and Open Add section<br/>
+Clicking on Cancel in Add New Section Dialog,Dialog is Closed and No Section is Created<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_CancelIn_DiscardChangesWithData()'><b>onlineTraining_AddANewOnlineCoures_CancelIn_DiscardChangesWithData</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1378672617" onClick='toggleBox("Output-1378672617", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1378672617" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1378672617">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Cancel in Discard Change Dialog,Dialog is closed and No Changes<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_Cancel_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_Cancel_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-2076080265" onClick='toggleBox("Output-2076080265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076080265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076080265">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Cancel in Add New Course ,Dailog is closed and No Course is added<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_CheckCreateButtonEnability_InAddANewOnlineCourse()'><b>onlineTraining_AddANewOnlineCoures_CheckCreateButtonEnability_InAddANewOnlineCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1526490459" onClick='toggleBox("Output-1526490459", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526490459" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526490459">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Checking Enability of Create Button in Add New Course<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_CheckInvalidMinimumPassScore()'><b>onlineTraining_AddANewOnlineCoures_CheckInvalidMinimumPassScore</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-747008719" onClick='toggleBox("Output-747008719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747008719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747008719">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying invalid Minimum Pass Score in Add New Course<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_CheckInvalidValidityPeriodDays()'><b>onlineTraining_AddANewOnlineCoures_CheckInvalidValidityPeriodDays</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1750081207" onClick='toggleBox("Output-1750081207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1750081207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1750081207">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Checking invalidity of Validity Periods of Days<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_Content_AddEmptySection_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_Content_AddEmptySection_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1102549292" onClick='toggleBox("Output-1102549292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1102549292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1102549292">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Adding Empty Section in Content,Not Created<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_Content_EnableToPublish()'><b>onlineTraining_AddANewOnlineCoures_Content_EnableToPublish</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1836603396" onClick='toggleBox("Output-1836603396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1836603396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1836603396">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying Publish Button is Enable with data in Content Section<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_Create_Added()'><b>onlineTraining_AddANewOnlineCoures_Create_Added</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-206769522" onClick='toggleBox("Output-206769522", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-206769522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-206769522">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Create in Add New Course ,Dailog is closed and  Course is added<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Cancel_NotDelete()'><b>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Cancel_NotDelete</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-267661727" onClick='toggleBox("Output-267661727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-267661727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-267661727">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page And Creating A Question<br/>
+Clicking on Cancel in Delete Question Dialog,Dialog is Closed and No Question is Deleted<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Deleted()'><b>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Deleted</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1524519276" onClick='toggleBox("Output-1524519276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1524519276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1524519276">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Question<br/>
+Clicking on Delete in Delete Question Dialog,Dialog is Closed and No Question is Delete<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_DeleteAddSection_Cancel_NotDelete()'><b>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Cancel_NotDelete</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-201188234" onClick='toggleBox("Output-201188234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-201188234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-201188234">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Section<br/>
+Clicking on Cancel in Delete Section Dialog,Dialog is Closed and not Section is Delete<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_DeleteAddSection_Deleted()'><b>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Deleted</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-472803864" onClick='toggleBox("Output-472803864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472803864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472803864">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Section<br/>
+Clicking on Delete in Delete Section Dialog,Dialog is Closed and  Section is Deleted<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_DiscardIn_DiscardChangesWithData()'><b>onlineTraining_AddANewOnlineCoures_DiscardIn_DiscardChangesWithData</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-381611781" onClick='toggleBox("Output-381611781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-381611781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-381611781">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Clicking on Discard in Discard Change Dialog,Dialog is closed and verified Changes<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_EditAddQuestion_Added()'><b>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Added</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-272722856" onClick='toggleBox("Output-272722856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-272722856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-272722856">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Createing a Question<br/>
+Clicking on Edit in Edit Question Dialog,Dialog is Closed and  Question is Edited<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_EditAddQuestion_Cancel_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Cancel_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-222825426" onClick='toggleBox("Output-222825426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-222825426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-222825426">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Question<br/>
+Clicking on Cancel in Edit  Question Dialog,Dialog is Closed and No Question is Edited<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_EditAddSection_Added()'><b>onlineTraining_AddANewOnlineCoures_EditAddSection_Added</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-2101864753" onClick='toggleBox("Output-2101864753", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2101864753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2101864753">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Section<br/>
+Clicking on Edit in Edit Section Dialog,Dialog is Closed and  Section is Edited<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_EditAddSection_Cancel_NotAdded()'><b>onlineTraining_AddANewOnlineCoures_EditAddSection_Cancel_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1850882270" onClick='toggleBox("Output-1850882270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1850882270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1850882270">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page and Creating a Section<br/>
+Clicking on Cancel in Edit Section Dialog,Dialog is Closed and No Section is Edited<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_NoContent_UnableToPublish()'><b>onlineTraining_AddANewOnlineCoures_NoContent_UnableToPublish</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-371665785" onClick='toggleBox("Output-371665785", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371665785" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371665785">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying Publish Button Visibility without Any Content<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_OpenAddQuestion_AndVerifyAllElement()'><b>onlineTraining_AddANewOnlineCoures_OpenAddQuestion_AndVerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-545335221" onClick='toggleBox("Output-545335221", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-545335221" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-545335221">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Opening  Add New Question Dialog and Verifying All Avalibale Element<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_AddANewOnlineCoures_OpenAddSection_AndVerifyAllElement()'><b>onlineTraining_AddANewOnlineCoures_OpenAddSection_AndVerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-2037555033" onClick='toggleBox("Output-2037555033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2037555033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2037555033">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Opening Add NEw Section And Verifying All Availabale Elements<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_BrowseCourse_And_CheckAvailableCourses()'><b>onlineTraining_BrowseCourse_And_CheckAvailableCourses</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1416206339" onClick='toggleBox("Output-1416206339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1416206339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1416206339">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page<br/>
+Checking All Available Courses<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_BrowseCourse_And_NaviagteToAddANewCourseFromBrowseCourseDashboard()'><b>onlineTraining_BrowseCourse_And_NaviagteToAddANewCourseFromBrowseCourseDashboard</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-206044968" onClick='toggleBox("Output-206044968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-206044968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-206044968">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page<br/>
+Verifying Navigation to Add New Course From Browse Course Page<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_BrowseCourse_CrossCheckCourseStatistics_From_CourseTable()'><b>onlineTraining_BrowseCourse_CrossCheckCourseStatistics_From_CourseTable</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1886448864" onClick='toggleBox("Output-1886448864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1886448864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1886448864">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page and Verifying Course Statistics Data with Course Table Data<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Cancel_InCloneCourse()'><b>onlineTraining_Cancel_InCloneCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-179751964" onClick='toggleBox("Output-179751964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-179751964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-179751964">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and open A course<br/>
+Clicking on Cancel in Clone Course Dialog,Dialog is Closed and No Clone Course is created<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Cancel_InDeleteCourse()'><b>onlineTraining_Cancel_InDeleteCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1008564873" onClick='toggleBox("Output-1008564873", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008564873" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008564873">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and Open A course<br/>
+Clicking on Cancel in Delete Course Dailog, Dailog is Closed and Course is not deleted<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Cancel_InSaveAndPreviewCourse()'><b>onlineTraining_Cancel_InSaveAndPreviewCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1991793894" onClick='toggleBox("Output-1991793894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1991793894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1991793894">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and open A course<br/>
+Clicking on Cancel in Save And Preview Course Dialog,Dialog is Closed<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Cancel_In_DiscardChanges_EditOrViewCourse()'><b>onlineTraining_Cancel_In_DiscardChanges_EditOrViewCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-2002715417" onClick='toggleBox("Output-2002715417", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2002715417" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2002715417">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page and Open a Course<br/>
+Clicking on Cancel in Discard Changes, DAilog is closed and no changes reflected<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Clone_InCloneCourse_And_VerifyWithOriginalOne()'><b>onlineTraining_Clone_InCloneCourse_And_VerifyWithOriginalOne</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1995062754" onClick='toggleBox("Output-1995062754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1995062754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1995062754">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and open A course<br/>
+Clicking on Clone in Clone Course Dialog,Dialog is Closed and  Clone Course is created<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Discard_In_DiscardChanges_EditOrViewCourse()'><b>onlineTraining_Discard_In_DiscardChanges_EditOrViewCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-208210739" onClick='toggleBox("Output-208210739", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-208210739" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-208210739">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Clicking on Discard in Discard Changes, DAilog is closed and  changes reflected<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_EditCourse()'><b>onlineTraining_EditCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1452766027" onClick='toggleBox("Output-1452766027", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1452766027" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1452766027">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and open A course<br/>
+Editing a Course and Verifying Edited Course in Browse Coure<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenAddANewOnlineCoures_And_VerifyAllElement()'><b>onlineTraining_OpenAddANewOnlineCoures_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-81812929" onClick='toggleBox("Output-81812929", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-81812929" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-81812929">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying All Available Element in Add New Course Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenAddANewOnlineCoures_And_VerifyTitle()'><b>onlineTraining_OpenAddANewOnlineCoures_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1803865904" onClick='toggleBox("Output-1803865904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1803865904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1803865904">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Add New Online Course Page<br/>
+Verifying Add New Online Course Title Page<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenBrowseCourse_And_VerifyAllElementAvailable()'><b>onlineTraining_OpenBrowseCourse_And_VerifyAllElementAvailable</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1039840203" onClick='toggleBox("Output-1039840203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1039840203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1039840203">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page and Verifying All Available Elements<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenBrowseCourse_And_VerifyTitle()'><b>onlineTraining_OpenBrowseCourse_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-219357215" onClick='toggleBox("Output-219357215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-219357215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-219357215">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page and Verifying Page Title<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenDashboard_And_NavigateToAddANewCourse_FromDashboard()'><b>onlineTraining_OpenDashboard_And_NavigateToAddANewCourse_FromDashboard</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1201722971" onClick='toggleBox("Output-1201722971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1201722971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1201722971">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Verifying Navigation to Add a New Course Page from Dahboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenDashboard_And_NavigateToBrowseCourse_FromDashboard()'><b>onlineTraining_OpenDashboard_And_NavigateToBrowseCourse_FromDashboard</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-185734379" onClick='toggleBox("Output-185734379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-185734379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-185734379">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Verifying Navigation to Browse Course Page from Dahboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenDashboard_And_NavigateToTrainingAnalytics_FromDashboard()'><b>onlineTraining_OpenDashboard_And_NavigateToTrainingAnalytics_FromDashboard</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1922167949" onClick='toggleBox("Output-1922167949", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1922167949" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1922167949">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Verifying Navigation to Training Analytics Page from Dahboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenDashboard_And_VerifyAllElementInDashboard()'><b>onlineTraining_OpenDashboard_And_VerifyAllElementInDashboard</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-574007921" onClick='toggleBox("Output-574007921", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-574007921" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-574007921">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Verifying All Avaialble Element in Training Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenTrainingAnalytics_And_InviteTable_ChangeByContractor()'><b>onlineTraining_OpenTrainingAnalytics_And_InviteTable_ChangeByContractor</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1559694415" onClick='toggleBox("Output-1559694415", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559694415" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559694415">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Training Analytics Page<br/>
+Verifying Invitable Data is changing by Changing Contractor<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenTrainingAnalytics_And_VerifyAllElement()'><b>onlineTraining_OpenTrainingAnalytics_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1498640332" onClick='toggleBox("Output-1498640332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1498640332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1498640332">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Training Analytics Page<br/>
+Verifying All Avaialable Element Present In Training Analytics Page<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenTrainingAnalytics_And_VerifyTitle()'><b>onlineTraining_OpenTrainingAnalytics_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-25135840" onClick='toggleBox("Output-25135840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25135840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25135840">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Training Analytics Page<br/>
+Verifying Training Analytics Page Tilte<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_OpenTrainingAnalytics_And_ViewReports()'><b>onlineTraining_OpenTrainingAnalytics_And_ViewReports</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-430189014" onClick='toggleBox("Output-430189014", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-430189014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-430189014">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Training Analytics Page<br/>
+Opening Online Training Report and Verifying Title<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_SaveAndPreviewCourse_FailedCourse_NoTryAgain()'><b>onlineTraining_SaveAndPreviewCourse_FailedCourse_NoTryAgain</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1031244205" onClick='toggleBox("Output-1031244205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1031244205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1031244205">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and Open A course<br/>
+Clicking on Continue in Save And Preview Course Dailog<br/>
+Verifying Preview Course for Failed  Score But No Try Again<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_SaveAndPreviewCourse_FailedCourse_TryAgain()'><b>onlineTraining_SaveAndPreviewCourse_FailedCourse_TryAgain</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1398629759" onClick='toggleBox("Output-1398629759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1398629759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1398629759">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and Open A course<br/>
+Clicking on Continue in Save And Preview Course Dailog<br/>
+Verifying Preview Course for Failed Score And  Try Again course<br/>
+</div>
+</td>
+<td></td>
+<td>68</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_SaveAndPreviewCourse_PassedCourse_CheckCreteria()'><b>onlineTraining_SaveAndPreviewCourse_PassedCourse_CheckCreteria</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1381737067" onClick='toggleBox("Output-1381737067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1381737067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1381737067">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and Open A course<br/>
+Clicking on Continue in Save And Preview Course Dailog<br/>
+Verifying Pass Course Creteria in Preview Course<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Save_And_Preview_Course_PassedCourse()'><b>onlineTraining_Save_And_Preview_Course_PassedCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1218910971" onClick='toggleBox("Output-1218910971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1218910971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1218910971">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+<br/>
+Opening Browse Course and Open A course<br/>
+Clicking on Continue in Save And Preview Course Dailog<br/>
+Verifying Preview Course for Passed Score<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_Save_And_Preview_InSaveAndPreviewCourse_Close_Preview()'><b>onlineTraining_Save_And_Preview_InSaveAndPreviewCourse_Close_Preview</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1665982886" onClick='toggleBox("Output-1665982886", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1665982886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1665982886">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course and open A course<br/>
+Clicking on Continue in Save And Preview Dialog,But Close in Preview Course Dailog <br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.onlineTraining_ViewCourse_And_VerifyDataWith_BrowseCourse()'><b>onlineTraining_ViewCourse_And_VerifyDataWith_BrowseCourse</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-480151151" onClick='toggleBox("Output-480151151", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-480151151" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-480151151">
+User Logged In successfully<br/>
+Opening Online Training<br/>
+Opening Browse Course Page<br/>
+Viewing a Course and Verifying Data With Browse course data<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingOnlinePageTest.training_OpenOnlineTrainingFromDropDown_And_VerifyTilte()'><b>training_OpenOnlineTrainingFromDropDown_And_VerifyTilte</b><br>Test class: com.Msite.TestScripts.TrainingOnlinePageTest<br/>
+<a href="#Output-1019014604" onClick='toggleBox("Output-1019014604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1019014604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1019014604">
+User Logged In successfully<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingOnlinePageTest@31610302</td></tr>
+</table><p>
+</body>
+</html>

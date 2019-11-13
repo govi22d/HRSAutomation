@@ -1,0 +1,510 @@
+<html>
+<head>
+<title>TestNG:  LoginTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LoginTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>68/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 30 17:02:32 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>409 seconds (409134 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.openContractors()'><b>openContractors</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [MSite - Contractors] but found [MSite - Add New Contractor]
+	at com.Msite.Pages.ContractorsPage.verifyContractorsTitle(ContractorsPage.java:113)
+	at com.Msite.TestScripts.ContractorsPageTest.openContractors(ContractorsPageTest.java:29)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515612450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1515612450'><pre>java.lang.AssertionError: expected [MSite - Contractors] but found [MSite - Add New Contractor]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.Msite.Pages.ContractorsPage.verifyContractorsTitle(ContractorsPage.java:113)
+	at com.Msite.TestScripts.ContractorsPageTest.openContractors(ContractorsPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.reviewContractorsAndVerifyEachAvailableElement()'><b>reviewContractorsAndVerifyEachAvailableElement</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td><div><pre>java.lang.AssertionError: Contractors Heading in Table is missing expected [true] but found [false]
+	at com.Msite.Pages.ContractorsPage.reviewContractorsAndVerifyAllElement(ContractorsPage.java:118)
+	at com.Msite.TestScripts.ContractorsPageTest.reviewContractorsAndVerifyEachAvailableElement(ContractorsPageTest.java:39)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085013955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2085013955'><pre>java.lang.AssertionError: Contractors Heading in Table is missing expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.Msite.Pages.ContractorsPage.reviewContractorsAndVerifyAllElement(ContractorsPage.java:118)
+	at com.Msite.TestScripts.ContractorsPageTest.reviewContractorsAndVerifyEachAvailableElement(ContractorsPageTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.LoginPageTest.InvalidUsernameAndInvalidPassword()'><b>InvalidUsernameAndInvalidPassword</b><br>Test class: com.Msite.TestScripts.LoginPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.LoginPageTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.LoginPageTest.InvalidUsernameAndValidPassword()'><b>InvalidUsernameAndValidPassword</b><br>Test class: com.Msite.TestScripts.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.LoginPageTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractorSearch_NoContractors_ForNameCombination()'><b>contractorSearch_NoContractors_ForNameCombination</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>7</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Add_And_Verify_AddNewContractor_withValidData()'><b>contractor_Add_And_Verify_AddNewContractor_withValidData</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_CancelInDelete_AddNewContractor()'><b>contractor_CancelInDelete_AddNewContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_ContractorSearch_FindContractor()'><b>contractor_ContractorSearch_FindContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Delete_AddNewContractor_FromTheList()'><b>contractor_Delete_AddNewContractor_FromTheList</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Edit_ExistingContractor_FromTheList()'><b>contractor_Edit_ExistingContractor_FromTheList</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>25</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Open_And_Review_AddNewContractor()'><b>contractor_Open_And_Review_AddNewContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Reload_Add_New_Contractor_And_Reload_WithDataInFields()'><b>contractor_Reload_Add_New_Contractor_And_Reload_WithDataInFields</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_SortContractor_ByAdminEmail()'><b>contractor_SortContractor_ByAdminEmail</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_SortContractor_ByContractor()'><b>contractor_SortContractor_ByContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>23</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_open_And_Save_Add_New_Contractor_NoDataInFields()'><b>contractor_open_And_Save_Add_New_Contractor_NoDataInFields</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest</td>
+<td></td>
+<td>25</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@464bee09</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ChangeSite_HeadingsUpdate()'><b>dashboard_ChangeSite_HeadingsUpdate</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ContractorSearch_FindContractor()'><b>dashboard_ContractorSearch_FindContractor</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ContractorSearch_SearchForEmployee_NoContractorFound()'><b>dashboard_ContractorSearch_SearchForEmployee_NoContractorFound</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_EmployeeSearch_EmptySearch_NoResults()'><b>dashboard_EmployeeSearch_EmptySearch_NoResults</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_EmployeeSearch_FindEmployees()'><b>dashboard_EmployeeSearch_FindEmployees</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_OnSite_Present()'><b>dashboard_Heading_OnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_OnSite_SelectionBox()'><b>dashboard_Heading_OnSite_SelectionBox</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_RightNowOnSite_Present()'><b>dashboard_Heading_RightNowOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_TrainedOperatives_Present()'><b>dashboard_Heading_TrainedOperatives_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_Transactions_Present()'><b>dashboard_Heading_Transactions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Apprentices_Report()'><b>dashboard_Widget_Apprentices_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FireMarshal_Present()'><b>dashboard_Widget_FireMarshal_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FireMarshal_Report()'><b>dashboard_Widget_FireMarshal_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FirstAid_Present()'><b>dashboard_Widget_FirstAid_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FirstAid_Report()'><b>dashboard_Widget_FirstAid_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Incidents_Report()'><b>dashboard_Widget_Incidents_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Inductions_Present()'><b>dashboard_Widget_Inductions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_LastestTransactions_Present()'><b>dashboard_Widget_LastestTransactions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_LastestTransactions_Report()'><b>dashboard_Widget_LastestTransactions_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Nationality_Present()'><b>dashboard_Widget_Nationality_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_PeopleOnSite_Present()'><b>dashboard_Widget_PeopleOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_PeopleOnSite_Report()'><b>dashboard_Widget_PeopleOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SMSTS_Present()'><b>dashboard_Widget_SMSTS_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SMSTS_Report()'><b>dashboard_Widget_SMSTS_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SSSTS_Present()'><b>dashboard_Widget_SSSTS_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SSSTS_Report()'><b>dashboard_Widget_SSSTS_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10ContractorsOnSite_Report()'><b>dashboard_Widget_Top10ContractorsOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10TradeOnSite_Present()'><b>dashboard_Widget_Top10TradeOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10TradeOnSite_Report()'><b>dashboard_Widget_Top10TradeOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_AccessAndAttendenceException_InEmployeeStatusSummaryContainer()'><b>employee_Open_AccessAndAttendenceException_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_AccreditationException_InEmployeeStatusSummaryContainer()'><b>employee_Open_AccreditationException_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_Emplyoee_InEmployeeStatusSummaryContainer()'><b>employee_Open_Emplyoee_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_IDCheckException_InEmployeeStatusSummaryContainer()'><b>employee_Open_IDCheckException_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_InductionBookingException_InEmployeeStatusSummaryContainer()'><b>employee_Open_InductionBookingException_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employee_Open_TrainingException_InEmployeeStatusSummaryContainer()'><b>employee_Open_TrainingException_InEmployeeStatusSummaryContainer</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_BioIdSearch()'><b>employees_BrowseEmployee_BioIdSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_ByNameSearch()'><b>employees_BrowseEmployee_ByNameSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_Colapses()'><b>employees_BrowseEmployee_Colapses</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_ContentCheck()'><b>employees_BrowseEmployee_ContentCheck</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_ContractorSearch()'><b>employees_BrowseEmployee_ContractorSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_FillAnyDetail_Relaod()'><b>employees_BrowseEmployee_FillAnyDetail_Relaod</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_FirstNameSearch()'><b>employees_BrowseEmployee_FirstNameSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_LastNameSearch()'><b>employees_BrowseEmployee_LastNameSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_BrowseEmployee_WithoutAnyDetailSearch()'><b>employees_BrowseEmployee_WithoutAnyDetailSearch</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_OpenEmployees()'><b>employees_OpenEmployees</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_Open_AddNewEmployee_And_VerifyAllElement()'><b>employees_Open_AddNewEmployee_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_Open_AddNewEmployee_CancelInReloadDailog()'><b>employees_Open_AddNewEmployee_CancelInReloadDailog</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_Open_AddNewEmployee_Empty()'><b>employees_Open_AddNewEmployee_Empty</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_Open_AddNewEmployee_ReloadInReloadDailog()'><b>employees_Open_AddNewEmployee_ReloadInReloadDailog</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_Open_AddNewEmployee_SaveChangesButton()'><b>employees_Open_AddNewEmployee_SaveChangesButton</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.EmployeesPageTest.employees_ReviewEmployee_And_VerifyEachAvailableElement()'><b>employees_ReviewEmployee_And_VerifyEachAvailableElement</b><br>Test class: com.Msite.TestScripts.EmployeesPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.EmployeesPageTest@f6c48ac</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.LoginPageTest.emptyUsernameAndPassword()'><b>emptyUsernameAndPassword</b><br>Test class: com.Msite.TestScripts.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.Msite.TestScripts.LoginPageTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.LoginPageTest.successfullLoginTest()'><b>successfullLoginTest</b><br>Test class: com.Msite.TestScripts.LoginPageTest</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.LoginPageTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.LoginPageTest.validUsernameAndInvalidPassword()'><b>validUsernameAndInvalidPassword</b><br>Test class: com.Msite.TestScripts.LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.Msite.TestScripts.LoginPageTest@4dfa3a9d</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.verifyDashboardTitle()'><b>verifyDashboardTitle</b><br>Test class: com.Msite.TestScripts.DashboardPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@6eebc39e</td></tr>
+</table><p>
+</body>
+</html>

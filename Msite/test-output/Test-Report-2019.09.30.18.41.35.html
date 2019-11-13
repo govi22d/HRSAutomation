@@ -1,0 +1,2264 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Msite Test Project</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+            
+                
+            
+        
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Functional Test Automation Report</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Sep 30, 2019 06:41:35 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='49.123%'><span class='strong'>28</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='50.877%'>29</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='183'>
+					<div class='test-heading'>
+						<span class='test-name'>training_OpenOnlineTrainingFromDropDown_And_VerifyTilte</span>
+						<span class='test-time'>Sep 30, 2019 06:42:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:11 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:11 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>training_OpenOnlineTrainingFromDropDown_And_VerifyTilte</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='184'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenDashboard_And_VerifyAllElementInDashboard</span>
+						<span class='test-time'>Sep 30, 2019 06:42:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:17 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:17 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenDashboard_And_VerifyAllElementInDashboard</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='185'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenDashboard_And_NavigateToTrainingAnlytics_FromDashboard</span>
+						<span class='test-time'>Sep 30, 2019 06:42:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:26 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:26 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenDashboard_And_NavigateToTrainingAnlytics_FromDashboard</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='186'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenDashboard_And_NavigateToBrowseCourse_FromDashboard</span>
+						<span class='test-time'>Sep 30, 2019 06:42:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:34 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:34 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenDashboard_And_NavigateToBrowseCourse_FromDashboard</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='187'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenDashboard_And_NavigateToAddANewCourse_FromDashboard</span>
+						<span class='test-time'>Sep 30, 2019 06:42:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:47 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:47 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenDashboard_And_NavigateToAddANewCourse_FromDashboard</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='188'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenTrainingAnalytics_And_VerifyTitle</span>
+						<span class='test-time'>Sep 30, 2019 06:42:56 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:42:56 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:42:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:42:56 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenTrainingAnalytics_And_VerifyTitle</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='189'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenTrainingAnalytics_And_VerifyAllElement</span>
+						<span class='test-time'>Sep 30, 2019 06:43:06 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:06 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:43:06 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_OpenTrainingAnalytics_And_VerifyAllElement</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='190'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenTrainingAnalytics_And_ViewReports</span>
+						<span class='test-time'>Sep 30, 2019 06:43:15 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:15 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:43:15 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_OpenTrainingAnalytics_And_ViewReports</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='191'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenTrainingAnalytics_And_InviteTable_ChangeByContractor</span>
+						<span class='test-time'>Sep 30, 2019 06:43:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:28 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:43:28 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenTrainingAnalytics_And_InviteTable_ChangeByContractor</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='192'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenAddANewOnlineCoures_And_VerifyTitle</span>
+						<span class='test-time'>Sep 30, 2019 06:43:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:37 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:43:37 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenAddANewOnlineCoures_And_VerifyTitle</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='193'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenAddANewOnlineCoures_And_VerifyAllElement</span>
+						<span class='test-time'>Sep 30, 2019 06:43:45 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:45 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:43:45 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_OpenAddANewOnlineCoures_And_VerifyAllElement</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='194'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddEmptyCourse_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:43:53 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:43:53 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:43:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:43:53 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_AddEmptyCourse_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='195'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_CheckCreateButtonEnability_InAddANewOnlineCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:44:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:44:03 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:44:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:44:03 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_CheckCreateButtonEnability_InAddANewOnlineCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='196'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_CheckInvalidValidityPeriodDays</span>
+						<span class='test-time'>Sep 30, 2019 06:44:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:44:14 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:44:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:44:14 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_CheckInvalidValidityPeriodDays</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='197'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_CancelIn_DiscardChangesWithData</span>
+						<span class='test-time'>Sep 30, 2019 06:44:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:44:26 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:44:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:44:26 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_CancelIn_DiscardChangesWithData</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='198'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_DiscardIn_DiscardChangesWithData</span>
+						<span class='test-time'>Sep 30, 2019 06:44:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:44:42 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:44:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:44:42 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_DiscardIn_DiscardChangesWithData</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='199'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_CheckInvalidMinimumPassScore</span>
+						<span class='test-time'>Sep 30, 2019 06:44:51 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:44:51 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:44:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:44:51 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_CheckInvalidMinimumPassScore</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='200'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_OpenAddQuestion_AndVerifyAllElement</span>
+						<span class='test-time'>Sep 30, 2019 06:45:00 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:00 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:00 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_OpenAddQuestion_AndVerifyAllElement</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='201'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddQuestion_UnableToSelectBlankAnswer</span>
+						<span class='test-time'>Sep 30, 2019 06:45:08 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:08 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:08 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_AddQuestion_UnableToSelectBlankAnswer</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='202'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddQuestion_OnlyOneAnswerSelected</span>
+						<span class='test-time'>Sep 30, 2019 06:45:17 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:17 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:17 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_AddQuestion_OnlyOneAnswerSelected</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='203'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddQuestion_Cancel_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:45:26 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:26 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:26 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_AddQuestion_Cancel_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='204'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddQuestion_Added</span>
+						<span class='test-time'>Sep 30, 2019 06:45:34 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:34 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:34 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_AddQuestion_Added</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='205'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Cancel_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:45:44 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:44 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:44 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Cancel_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='206'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Added</span>
+						<span class='test-time'>Sep 30, 2019 06:45:52 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:45:52 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:45:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:45:52 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_EditAddQuestion_Added</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='207'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Cancel_NotDelete</span>
+						<span class='test-time'>Sep 30, 2019 06:46:00 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:46:00 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:46:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:46:00 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Cancel_NotDelete</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='208'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Deleted</span>
+						<span class='test-time'>Sep 30, 2019 06:46:07 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:46:07 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:46:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:46:07 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Deleted</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='209'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_OpenAddSection_AndVerifyAllElement</span>
+						<span class='test-time'>Sep 30, 2019 06:46:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:46:20 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:46:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:46:20 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_OpenAddSection_AndVerifyAllElement</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='210'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_Content_AddEmptySection_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:46:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:46:32 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:46:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:46:32 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_Content_AddEmptySection_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='211'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddSection_Cancel_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:46:57 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:46:57 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:46:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:46:57 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_AddSection_Cancel_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='212'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_AddSection_Added</span>
+						<span class='test-time'>Sep 30, 2019 06:47:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:47:20 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:47:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:47:20 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_AddSection_Added</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='213'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_EditAddSection_Cancel_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:47:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:47:48 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:47:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:47:48 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_EditAddSection_Cancel_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='214'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_EditAddSection_Added</span>
+						<span class='test-time'>Sep 30, 2019 06:48:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:48:21 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:48:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:48:21 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_EditAddSection_Added</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='215'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Cancel_NotDelete</span>
+						<span class='test-time'>Sep 30, 2019 06:48:49 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:48:49 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:48:49 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:48:49 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Cancel_NotDelete</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='216'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Deleted</span>
+						<span class='test-time'>Sep 30, 2019 06:49:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:49:18 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:49:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:49:18 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_DeleteAddSection_Deleted</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='217'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_NoContent_UnableToPublish</span>
+						<span class='test-time'>Sep 30, 2019 06:49:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:49:26 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:49:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:49:26 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_AddANewOnlineCoures_NoContent_UnableToPublish</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='218'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_Content_EnableToPublish</span>
+						<span class='test-time'>Sep 30, 2019 06:49:34 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:49:34 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:49:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:49:34 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_Content_EnableToPublish</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='219'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_Cancel_NotAdded</span>
+						<span class='test-time'>Sep 30, 2019 06:49:45 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:49:45 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:49:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:49:45 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_Cancel_NotAdded</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='220'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_AddANewOnlineCoures_Create_Added</span>
+						<span class='test-time'>Sep 30, 2019 06:49:57 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:49:57 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:49:57 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:49:57 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_AddANewOnlineCoures_Create_Added</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='221'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenBrowseCourse_And_VerifyTitle</span>
+						<span class='test-time'>Sep 30, 2019 06:50:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:08 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:50:08 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_OpenBrowseCourse_And_VerifyTitle</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='222'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_OpenBrowseCourse_And_VerifyAllElementAvailable</span>
+						<span class='test-time'>Sep 30, 2019 06:50:16 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:16 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:50:16 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_OpenBrowseCourse_And_VerifyAllElementAvailable</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='223'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_BrowseCourse_And_NaviagteToAddANewCourseFromBrowseCourseDashboard</span>
+						<span class='test-time'>Sep 30, 2019 06:50:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:27 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:50:27 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_BrowseCourse_And_NaviagteToAddANewCourseFromBrowseCourseDashboard</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='224'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_BrowseCourse_And_CheckAvailableCourses</span>
+						<span class='test-time'>Sep 30, 2019 06:50:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:35 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:50:35 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_BrowseCourse_And_CheckAvailableCourses</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='225'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_BrowseCourse_CrossCheckCourseStatistics_From_CourseTable</span>
+						<span class='test-time'>Sep 30, 2019 06:50:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:44 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:50:44 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_BrowseCourse_CrossCheckCourseStatistics_From_CourseTable</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='226'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_ViewCourse_And_VerifyDataWith_BrowseCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:50:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:51 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:50:51 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_ViewCourse_And_VerifyDataWith_BrowseCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='227'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Cancel_In_DiscardChanges_EditOrViewCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:50:59 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:50:59 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:50:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:50:59 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Cancel_In_DiscardChanges_EditOrViewCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='228'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Discard_In_DiscardChanges_EditOrViewCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:51:07 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:07 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:07 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Discard_In_DiscardChanges_EditOrViewCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='229'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_EditCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:51:15 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:15 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:15 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_EditCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='230'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Cancel_InCloneCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:51:23 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:23 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:23 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:23 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Cancel_InCloneCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='231'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Clone_InCloneCourse_And_VerifyWithOriginalOne</span>
+						<span class='test-time'>Sep 30, 2019 06:51:31 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:31 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:31 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Clone_InCloneCourse_And_VerifyWithOriginalOne</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='232'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Cancel_InSaveAndPreviewCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:51:39 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:39 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:39 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:39 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Cancel_InSaveAndPreviewCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='233'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Save_And_Preview_InSaveAndPreviewCourse_Close_Preview</span>
+						<span class='test-time'>Sep 30, 2019 06:51:47 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:47 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:47 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Save_And_Preview_InSaveAndPreviewCourse_Close_Preview</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='234'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Save_And_Preview_Course_PassedCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:51:55 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:51:55 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:51:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:51:55 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Save_And_Preview_Course_PassedCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='235'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_SaveAndPreviewCourse_FailedCourse_NoTryAgain</span>
+						<span class='test-time'>Sep 30, 2019 06:52:03 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:52:03 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:52:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:52:03 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_SaveAndPreviewCourse_FailedCourse_NoTryAgain</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='236'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_SaveAndPreviewCourse_FailedCourse_TryAgain</span>
+						<span class='test-time'>Sep 30, 2019 06:52:13 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:52:13 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:52:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:52:13 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_SaveAndPreviewCourse_FailedCourse_TryAgain</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='237'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_SaveAndPreviewCourse_PassedCourse_CheckCreteria</span>
+						<span class='test-time'>Sep 30, 2019 06:52:22 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:52:22 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:52:22 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:52:22 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_SaveAndPreviewCourse_PassedCourse_CheckCreteria</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='238'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Cancel_InDeleteCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:52:30 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:52:30 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:52:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>6:52:30 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>onlineTraining_Cancel_InDeleteCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='239'>
+					<div class='test-heading'>
+						<span class='test-name'>onlineTraining_Delete_InDeleteCourse</span>
+						<span class='test-time'>Sep 30, 2019 06:52:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Sep 30, 2019 06:52:40 PM</span>
+	<span class='label end-time'>Sep 30, 2019 06:52:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>6:52:40 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>onlineTraining_Delete_InDeleteCourse</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>57</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Sep 30, 2019 06:41:35 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Sep 30, 2019 06:52:41 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 11m 5s+905ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Host name</td>
+								<td>localhost</td>
+							</tr>
+							<tr>
+								<td>Environemnt</td>
+								<td>Staging2</td>
+							</tr>
+							<tr>
+								<td>user</td>
+								<td>Deepak</td>
+							</tr>
+							<tr>
+								<td>Version no.</td>
+								<td>MSite v6.14.1001.1</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 57,
+				passParent: 28,
+				failParent: 29,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 29,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "training_OpenOnlineTrainingFromDropDown_And_VerifyTilte":0,"onlineTraining_OpenDashboard_And_VerifyAllElementInDashboard":0,"onlineTraining_OpenDashboard_And_NavigateToTrainingAnlytics_FromDashboard":0,"onlineTraining_OpenDashboard_And_NavigateToBrowseCourse_FromDashboard":0,"onlineTraining_OpenDashboard_And_NavigateToAddANewCourse_FromDashboard":0,"onlineTraining_OpenTrainingAnalytics_And_VerifyTitle":0,"onlineTraining_OpenTrainingAnalytics_And_VerifyAllElement":0,"onlineTraining_OpenTrainingAnalytics_And_ViewReports":0,"onlineTraining_OpenTrainingAnalytics_And_InviteTable_ChangeByContractor":0.001,"onlineTraining_OpenAddANewOnlineCoures_And_VerifyTitle":0,"onlineTraining_OpenAddANewOnlineCoures_And_VerifyAllElement":0,"onlineTraining_AddANewOnlineCoures_AddEmptyCourse_NotAdded":0,"onlineTraining_AddANewOnlineCoures_CheckCreateButtonEnability_InAddANewOnlineCourse":0,"onlineTraining_AddANewOnlineCoures_CheckInvalidValidityPeriodDays":0,"onlineTraining_AddANewOnlineCoures_CancelIn_DiscardChangesWithData":0,"onlineTraining_AddANewOnlineCoures_DiscardIn_DiscardChangesWithData":0,"onlineTraining_AddANewOnlineCoures_CheckInvalidMinimumPassScore":0,"onlineTraining_AddANewOnlineCoures_OpenAddQuestion_AndVerifyAllElement":0,"onlineTraining_AddANewOnlineCoures_AddQuestion_UnableToSelectBlankAnswer":0,"onlineTraining_AddANewOnlineCoures_AddQuestion_OnlyOneAnswerSelected":0,"onlineTraining_AddANewOnlineCoures_AddQuestion_Cancel_NotAdded":0,"onlineTraining_AddANewOnlineCoures_AddQuestion_Added":0,"onlineTraining_AddANewOnlineCoures_EditAddQuestion_Cancel_NotAdded":0,"onlineTraining_AddANewOnlineCoures_EditAddQuestion_Added":0,"onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Cancel_NotDelete":0,"onlineTraining_AddANewOnlineCoures_DeleteAddQuestion_Deleted":0,"onlineTraining_AddANewOnlineCoures_OpenAddSection_AndVerifyAllElement":0,"onlineTraining_AddANewOnlineCoures_Content_AddEmptySection_NotAdded":0,"onlineTraining_AddANewOnlineCoures_AddSection_Cancel_NotAdded":0.001,"onlineTraining_AddANewOnlineCoures_AddSection_Added":0,"onlineTraining_AddANewOnlineCoures_EditAddSection_Cancel_NotAdded":0,"onlineTraining_AddANewOnlineCoures_EditAddSection_Added":0,"onlineTraining_AddANewOnlineCoures_DeleteAddSection_Cancel_NotDelete":0,"onlineTraining_AddANewOnlineCoures_DeleteAddSection_Deleted":0,"onlineTraining_AddANewOnlineCoures_NoContent_UnableToPublish":0,"onlineTraining_AddANewOnlineCoures_Content_EnableToPublish":0.001,"onlineTraining_AddANewOnlineCoures_Cancel_NotAdded":0.001,"onlineTraining_AddANewOnlineCoures_Create_Added":0,"onlineTraining_OpenBrowseCourse_And_VerifyTitle":0,"onlineTraining_OpenBrowseCourse_And_VerifyAllElementAvailable":0,"onlineTraining_BrowseCourse_And_NaviagteToAddANewCourseFromBrowseCourseDashboard":0,"onlineTraining_BrowseCourse_And_CheckAvailableCourses":0,"onlineTraining_BrowseCourse_CrossCheckCourseStatistics_From_CourseTable":0,"onlineTraining_ViewCourse_And_VerifyDataWith_BrowseCourse":0,"onlineTraining_Cancel_In_DiscardChanges_EditOrViewCourse":0,"onlineTraining_Discard_In_DiscardChanges_EditOrViewCourse":0,"onlineTraining_EditCourse":0,"onlineTraining_Cancel_InCloneCourse":0,"onlineTraining_Clone_InCloneCourse_And_VerifyWithOriginalOne":0,"onlineTraining_Cancel_InSaveAndPreviewCourse":0,"onlineTraining_Save_And_Preview_InSaveAndPreviewCourse_Close_Preview":0,"onlineTraining_Save_And_Preview_Course_PassedCourse":0,"onlineTraining_SaveAndPreviewCourse_FailedCourse_NoTryAgain":0,"onlineTraining_SaveAndPreviewCourse_FailedCourse_TryAgain":0,"onlineTraining_SaveAndPreviewCourse_PassedCourse_CheckCreteria":0,"onlineTraining_Cancel_InDeleteCourse":0,"onlineTraining_Delete_InDeleteCourse":0
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+			
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+		</script>
+	</body>
+</html>

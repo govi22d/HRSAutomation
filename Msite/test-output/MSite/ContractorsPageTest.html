@@ -1,0 +1,310 @@
+<html>
+<head>
+<title>TestNG:  ContractorsPageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ContractorsPageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 12 16:05:47 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>295 seconds (295063 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractorSearch_NoContractors_ForNameCombination()'><b>contractorSearch_NoContractors_ForNameCombination</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-228548558" onClick='toggleBox("Output-228548558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-228548558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-228548558">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Send Diffrent combination of Contractor name in Search box<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Add_And_Verify_AddNewContractor_withValidData()'><b>contractor_Add_And_Verify_AddNewContractor_withValidData</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1958607371" onClick='toggleBox("Output-1958607371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1958607371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1958607371">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add New Contractor by Filling accurate data in all mandatory field<br/>
+Verify Newly Added Contractor in Contractors List<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Add_ContractorUser_InContractor()'><b>contractor_Add_ContractorUser_InContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-942798018" onClick='toggleBox("Output-942798018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-942798018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-942798018">
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add Contractor User in Existing Contractor<br/>
+</div>
+</td>
+<td></td>
+<td>44</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_CancelInDelete_AddNewContractor()'><b>contractor_CancelInDelete_AddNewContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1055787253" onClick='toggleBox("Output-1055787253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1055787253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1055787253">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Open Delete Contractor Dialog and Click on Cancel<br/>
+Delete Dailog is Closed and Contractor is not deleted from the list<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_ContractorSearch_FindContractor()'><b>contractor_ContractorSearch_FindContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-536674580" onClick='toggleBox("Output-536674580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-536674580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-536674580">
+User Logged In successfully<br/>
+Getting Contractor Name from Contractor list<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Send Existing Contactor Name in Contractor Search box <br/>
+Confirm Presence of searched Contractor in Search Result<br/>
+Delete newly Create Contracotr<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Delete_AddNewContractor_FromTheList()'><b>contractor_Delete_AddNewContractor_FromTheList</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1644515247" onClick='toggleBox("Output-1644515247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644515247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644515247">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Open Delete Contractor Dialog and Click on Delete<br/>
+Delete Dailog is Closed and Contractor is  Deleted from the Contractor list<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Edit_ExistingContractor_FromTheList()'><b>contractor_Edit_ExistingContractor_FromTheList</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1636003033" onClick='toggleBox("Output-1636003033", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1636003033" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1636003033">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add New Contractor with Name only<br/>
+Open Newly Created Contractor and Edit Contractor<br/>
+Delete newly updated Contractor<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Open_And_Review_AddNewContractor()'><b>contractor_Open_And_Review_AddNewContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1893063019" onClick='toggleBox("Output-1893063019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1893063019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1893063019">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Navigate to Add new Contractor and Verify All Avialble Element<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Open_And_Save_Add_New_Contractor_NoDataInFields()'><b>contractor_Open_And_Save_Add_New_Contractor_NoDataInFields</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-946260334" onClick='toggleBox("Output-946260334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-946260334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-946260334">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add New Contractor without filling any Mandatory field<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Reload_Add_New_Contractor_And_Reload_WithDataInFields()'><b>contractor_Reload_Add_New_Contractor_And_Reload_WithDataInFields</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1122813268" onClick='toggleBox("Output-1122813268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1122813268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1122813268">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Fill data and Reload in Add New Contractor <br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_SortContractor_ByAdminEmail()'><b>contractor_SortContractor_ByAdminEmail</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1872258305" onClick='toggleBox("Output-1872258305", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872258305" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872258305">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Sort ContractorsList by Clicking on Admin Email column in Contractors table<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_SortContractor_ByContractor()'><b>contractor_SortContractor_ByContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-654299840" onClick='toggleBox("Output-654299840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-654299840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-654299840">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Sort ContractorsList by Clicking on Contractor column in Contractors table<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Verify_DuplicateEmailErrorMessage_InContractor()'><b>contractor_Verify_DuplicateEmailErrorMessage_InContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-289163990" onClick='toggleBox("Output-289163990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-289163990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-289163990">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add Contractor with existing Email Name,Duplicate Email name error message is appeared<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.contractor_Verify_DuplicateNameErrorMessage_InContractor()'><b>contractor_Verify_DuplicateNameErrorMessage_InContractor</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-2089029603" onClick='toggleBox("Output-2089029603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089029603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089029603">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Add Contractor with existing contractor Name,Duplicate Contractor name error message is appeared<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.openContractors()'><b>openContractors</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-1684898059" onClick='toggleBox("Output-1684898059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1684898059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1684898059">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Verify Title of Contractor Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.ContractorsPageTest.reviewContractorsAndVerifyEachAvailableElement()'><b>reviewContractorsAndVerifyEachAvailableElement</b><br>Test class: com.Msite.TestScripts.ContractorsPageTest<br/>
+<a href="#Output-2124881858" onClick='toggleBox("Output-2124881858", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2124881858" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2124881858">
+User Logged In successfully<br/>
+Navigate to Contractors by Clicking on Contractors link<br/>
+Verify All Available Elements In ContractorsPage<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.ContractorsPageTest@4bec1f0c</td></tr>
+</table><p>
+</body>
+</html>

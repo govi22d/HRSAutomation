@@ -1,0 +1,534 @@
+<html>
+<head>
+<title>TestNG:  DashboardPageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DashboardPageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 12 15:59:00 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>406 seconds (406217 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ChangeSite_HeadingsUpdate()'><b>dashboard_ChangeSite_HeadingsUpdate</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1703040426" onClick='toggleBox("Output-1703040426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1703040426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1703040426">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Updation of headings by Changing Site from Site Selection Box in Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ContractorSearch_FindContractor()'><b>dashboard_ContractorSearch_FindContractor</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1527906606" onClick='toggleBox("Output-1527906606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527906606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527906606">
+User Logged In successfully<br/>
+Getting Existing Contractor Name From Contractors List<br/>
+Switch back to Dashbaord Page by clicking on Dashboard<br/>
+Send Existing Contractor  Name In Dashboard Search box and search <br/>
+Confirmed Searched Contractor Name in Dashboard Search Result Page <br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_ContractorSearch_SearchForEmployee_NoContractorFound()'><b>dashboard_ContractorSearch_SearchForEmployee_NoContractorFound</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-540206885" onClick='toggleBox("Output-540206885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-540206885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540206885">
+User Logged In successfully<br/>
+Getting Existing Employee Name From Employee List<br/>
+Switch back to Dashbaord Page by clicking on Dashboard<br/>
+Send Existing Employee  Name In Dashboard Search box and search <br/>
+Confirm 0 Contractor Found in Dashboard Search Result <br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_EmployeeSearch_EmptySearch_NoResults()'><b>dashboard_EmployeeSearch_EmptySearch_NoResults</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-678680178" onClick='toggleBox("Output-678680178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-678680178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-678680178">
+User Logged In successfully<br/>
+Send Empty Employee in Dashboard Search box and Search<br/>
+Verify 0  Employee Found in Dashboard<br/>
+Verify 0  Contractors Found in Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_EmployeeSearch_FindEmployees()'><b>dashboard_EmployeeSearch_FindEmployees</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1179689991" onClick='toggleBox("Output-1179689991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179689991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179689991">
+User Logged In successfully<br/>
+Getting Existing Employee Name from Employee List<br/>
+Switch back to Dashbaord Page by clicking on Dashboard<br/>
+Send Existing Employee  Name In Dashboard Search box and search <br/>
+Confirm searched Employee Presence in Dashboard Search Result <br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_OnSite_Present()'><b>dashboard_Heading_OnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-724886412" onClick='toggleBox("Output-724886412", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-724886412" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-724886412">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of On Site Heading in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_OnSite_SelectionBox()'><b>dashboard_Heading_OnSite_SelectionBox</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-684407333" onClick='toggleBox("Output-684407333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-684407333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-684407333">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of On Site Selection Box Heading in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_RightNowOnSite_Present()'><b>dashboard_Heading_RightNowOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-178575564" onClick='toggleBox("Output-178575564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-178575564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-178575564">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Right Noe On Site Heading in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_TrainedOperatives_Present()'><b>dashboard_Heading_TrainedOperatives_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-435034854" onClick='toggleBox("Output-435034854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-435034854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-435034854">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Trained Operatives Heading in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Heading_Transactions_Present()'><b>dashboard_Heading_Transactions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1437107223" onClick='toggleBox("Output-1437107223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1437107223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1437107223">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Transaction Heading in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Apprentices_Report()'><b>dashboard_Widget_Apprentices_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1060512053" onClick='toggleBox("Output-1060512053", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060512053" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060512053">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Apprentices Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FireMarshal_Present()'><b>dashboard_Widget_FireMarshal_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-345780740" onClick='toggleBox("Output-345780740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-345780740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-345780740">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Fire Marshal Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FireMarshal_Report()'><b>dashboard_Widget_FireMarshal_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1101231294" onClick='toggleBox("Output-1101231294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101231294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101231294">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Fire Marshal Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FirstAid_Present()'><b>dashboard_Widget_FirstAid_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1555413896" onClick='toggleBox("Output-1555413896", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1555413896" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1555413896">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of First Aid Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_FirstAid_Report()'><b>dashboard_Widget_FirstAid_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1732902480" onClick='toggleBox("Output-1732902480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1732902480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1732902480">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to First Aid Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Gender_Present()'><b>dashboard_Widget_Gender_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-813583428" onClick='toggleBox("Output-813583428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-813583428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-813583428">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Gender Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Incidents_Report()'><b>dashboard_Widget_Incidents_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1907767760" onClick='toggleBox("Output-1907767760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1907767760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1907767760">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Incidents Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Inductions_Present()'><b>dashboard_Widget_Inductions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1278196189" onClick='toggleBox("Output-1278196189", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1278196189" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1278196189">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Inductions Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_LastestTransactions_Present()'><b>dashboard_Widget_LastestTransactions_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-235195640" onClick='toggleBox("Output-235195640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-235195640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-235195640">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Latest Transaction Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_LastestTransactions_Report()'><b>dashboard_Widget_LastestTransactions_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1517266286" onClick='toggleBox("Output-1517266286", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1517266286" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1517266286">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Latest Transaction Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_OperativeOnSite_Disabled_HistrogramVisibilityCheck()'><b>dashboard_Widget_OperativeOnSite_Disabled_HistrogramVisibilityCheck</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-247334525" onClick='toggleBox("Output-247334525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-247334525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247334525">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Disable Histrogram visibility from setting and Check absence of Histrogram in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_OperativeOnSite_Enabled_HistrogramVisibilityCheck()'><b>dashboard_Widget_OperativeOnSite_Enabled_HistrogramVisibilityCheck</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1625258377" onClick='toggleBox("Output-1625258377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1625258377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1625258377">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Enable Histrogram visibility from setting and Check Presence of Histrogram in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_PeopleOnSite_Present()'><b>dashboard_Widget_PeopleOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1751753651" onClick='toggleBox("Output-1751753651", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1751753651" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1751753651">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of People On Site Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_PeopleOnSite_Report()'><b>dashboard_Widget_PeopleOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1957691975" onClick='toggleBox("Output-1957691975", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1957691975" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957691975">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to People On Site Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SMSTS_Present()'><b>dashboard_Widget_SMSTS_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-185488647" onClick='toggleBox("Output-185488647", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-185488647" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-185488647">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of SMSTS Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SMSTS_Report()'><b>dashboard_Widget_SMSTS_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-936546050" onClick='toggleBox("Output-936546050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-936546050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-936546050">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to SMSTS Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SSSTS_Present()'><b>dashboard_Widget_SSSTS_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1418550995" onClick='toggleBox("Output-1418550995", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418550995" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418550995">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of SSSTS Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_SSSTS_Report()'><b>dashboard_Widget_SSSTS_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-345060426" onClick='toggleBox("Output-345060426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-345060426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-345060426">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to SSSTS Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10ContractorsOnSite_Report()'><b>dashboard_Widget_Top10ContractorsOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1530638839" onClick='toggleBox("Output-1530638839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1530638839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1530638839">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Top 10 Contractors Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10TradeOnSite_Present()'><b>dashboard_Widget_Top10TradeOnSite_Present</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-81355344" onClick='toggleBox("Output-81355344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-81355344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-81355344">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Verify Presence of Top 10 Trade On Site Widget in Dashboard Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.dashboard_Widget_Top10TradeOnSite_Report()'><b>dashboard_Widget_Top10TradeOnSite_Report</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1403780103" onClick='toggleBox("Output-1403780103", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1403780103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1403780103">
+User Logged In successfully<br/>
+Navigate To Dashboard Page by clicking on Dashboard link<br/>
+Navigate to Top 10 Trade On Site Report Page  From Dashboard and Ensure data match in Dashboard and Report Page<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.DashboardPageTest.verifyDashboardTitle()'><b>verifyDashboardTitle</b><br>Test class: com.Msite.TestScripts.DashboardPageTest<br/>
+<a href="#Output-1311544814" onClick='toggleBox("Output-1311544814", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1311544814" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1311544814">
+User Logged In successfully<br/>
+Click on Dashboard<br/>
+Verify Dashboard  Page Title<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.Msite.TestScripts.DashboardPageTest@1ed4004b</td></tr>
+</table><p>
+</body>
+</html>

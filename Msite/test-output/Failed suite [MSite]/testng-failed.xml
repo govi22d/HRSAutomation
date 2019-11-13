@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [MSite]]">
+  <listeners>
+    <listener class-name="com.Msite.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="EmployeesPageTest(failed)(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Msite.TestScripts.EmployeesPageTest">
+        <methods>
+          <include name="employee_EditAttachmentInEmployee"/>
+          <include name="employee_AddAttachmentInEmployee"/>
+          <include name="employee_Cancel_AttachmentInEmployee"/>
+          <include name="employee_Cancel_InDeleteEmployee"/>
+          <include name="tearDown"/>
+          <include name="employee_Delete_AttachmentInEmployee"/>
+          <include name="setUp"/>
+          <include name="employee_Delete_InDeleteEmployee"/>
+        </methods>
+      </class> <!-- com.Msite.TestScripts.EmployeesPageTest -->
+    </classes>
+  </test> <!-- EmployeesPageTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [MSite]] -->

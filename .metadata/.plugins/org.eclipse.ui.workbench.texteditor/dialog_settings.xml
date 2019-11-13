@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="firefox"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="chrome"/>
+			<item value="ClassroomCourse_Test"/>
+			<item value="create_NewClassroomCourse"/>
+			<item value="ClassroomCourse_Test_1"/>
+			<item value="driver.getTitle()"/>
+			<item value="throws InterruptedException"/>
+			<item value="BaseClass."/>
+			<item value="Thread.sleep(1500);"/>
+			<item value="Thread.sleep(4000);"/>
+			<item value="Thread.sleep(6000);"/>
+			<item value="Thread.sleep(3000);"/>
+			<item value="Thread.sleep(500);"/>
+			<item value="Thread.sleep(5000);"/>
+			<item value="Thread.sleep(2000);"/>
+			<item value="Thread.sleep(1000);"/>
+		</list>
+		<list key="replacehistory">
+			<item value="firefox"/>
+			<item value="ie"/>
+			<item value=""/>
+			<item value="waitForSeconds(1.5);"/>
+			<item value="waitForSeconds(4);"/>
+			<item value="waitForSeconds(6);"/>
+			<item value="waitForSeconds(3);"/>
+			<item value="waitForSeconds(0.5);"/>
+			<item value="waitForSeconds(5);"/>
+			<item value="waitForSeconds(2);"/>
+			<item value="waitForSeconds(1);"/>
+			<item value="FindElement"/>
+			<item value="isElementPresentByXpath"/>
+			<item value="isElementPresentById"/>
+			<item value="selectContracotr(contractorName);"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1015"/>
+		<item key="DIALOG_Y_ORIGIN" value="104"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="452"/>
+		<item key="DIALOG_Y_ORIGIN" value="247"/>
+	</section>
+</section>

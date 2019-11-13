@@ -1,0 +1,14 @@
+baseUrl=https://staging1.msitecloud.com/
+username=HRS
+password=m51t3P@$$
+chromepath=./Drivers\\chromedriver.exe
+iepath=./Drivers\\IEDriverServer.exe
+firefoxpath=./Drivers\\geckodriver.exe
+emptyUsername=
+emptyPassword=
+invalidUsername=mngr83460
+invalidPassword=qAbUzyj
+siteUsername=deepak@meemmemory.com
+sitePassword=Lucky@95
+contractorUsername=deepak+2@meemmemory.com
+contractorPassword=Lucky@95

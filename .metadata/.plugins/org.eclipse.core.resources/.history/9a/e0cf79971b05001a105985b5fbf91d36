@@ -1,0 +1,211 @@
+package com.Msite.Pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import org.testng.Assert;
+
+import com.Msite.TestScripts.BaseClass;
+
+/** 
+* 
+* @author Deepak Malviya 
+*/
+public class MsiteLoginPage extends BaseClass
+{
+	  public MsiteLoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//input[@id='login-username']")
+	WebElement userName;
+	
+	@FindBy(id="login-password")
+	WebElement password;
+	
+	@FindBy(id="login-btn")
+	WebElement signin;
+	
+	@FindBy(xpath="//i[@class='fa fa-user']")
+	WebElement userdropdown;
+	
+	@FindBy(xpath="//a[contains(text(),'Logout')]") 
+	WebElement logout;
+	
+	@FindBy(xpath="//li[contains(text(),'The user name or password provided is incorrect.')]")
+	WebElement failedLoginMessage;
+	
+	@FindBy(xpath="//a[contains(text(),'Users (HRS)')]") 
+	WebElement userHrs;
+	
+	@FindBy(xpath="//a[contains(text(),'Users')]") 
+	WebElement user;
+	
+	@FindBy(xpath="//div[@class='modal-content']") 
+	WebElement inactivitypopup;
+
+	/** 
+	* This method Enter Username  and Its taking String as argument
+	* @author Deepak Malviya 
+	*/
+	public void enterUsername(String uName) {
+		userName.clear();
+		userName.sendKeys(uName);
+	}
+	
+	/** 
+	* This method Enter Password  and Its taking String as argument
+	* @author Deepak Malviya 
+	*/
+	public void enterPassword(String passwrd) {
+		password.clear();
+		password.sendKeys(passwrd);
+	}
+	
+	/** 
+	* This method Perform click signIn Action and having no parameters
+	* @author Deepak Malviya 
+	*/
+	public void clickOnSignIn() {
+		signin.click();
+	}
+	
+	public void clickOnUser() {
+		userdropdown.click();
+	}
+	public void clickOnLogout() {
+		logout.click();
+	}
+	
+	/** 
+	* This method Verify All Element available in Login Page
+	*  Its taking Webdriver as argument
+	* @author Deepak Malviya 
+	*/
+	public void verifyLoginPageElement() 
+	{
+	
+		Assert.assertEquals(driver.getTitle(), "MSite - Login");
+		Assert.assertTrue(isElementPresentByXpath("//div[@class='navbar-header']//img"), "Msite Logo is missing");
+		Assert.assertTrue(isElementPresentByXpath("//h3[contains(text(),'Welcome to MSite.')]"), "WelCome to Miste Message is missing");
+	    Assert.assertTrue(isElementPresentByXpath("//h5[contains(text(),'Please sign in.')]"), "Please sign is is missing");
+	    Assert.assertTrue(isElementPresent(userName), "Username input box is missing");
+	    Assert.assertTrue(isElementPresent(password), "Password input box is missing");
+	    Assert.assertTrue(isElementPresent(signin), "Sign in button is missing");
+	    Assert.assertTrue(isElementPresentByXpath("//a[contains(text(),'Forgot Password')]"), "forget Password Link is missing");
+	    Assert.assertTrue(isElementPresentByXpath("//div[@class='container-fluid no-padding']//a[@target='_blank']"), "Legal Link is misisng"); 
+        Assert.assertTrue(isElementPresentByXpath("//a[contains(text(),'Received a Workforce Registration login invitation')]"), "WorForce Registration Link is misisng");	    
+	    Assert.assertTrue(isElementPresentByXpath("//img[@class='login-image']"), "Image is missing");
+	    Assert.assertTrue(isElementPresentByXpath("//iframe[@id='loginMediaContent']"), "IFrame is misisng");
+	    driver.switchTo().frame("loginMediaContent"); // Switch to IFrame from Window
+	    String rollingTextCurrent =FindElement("xpath", "//div[@class='rollingText current']").getText();
+	    waitForSeconds(1);
+	    String updatedRollingTextCurrent =FindElement("xpath", "//div[@class='rollingText current']").getText();
+	    Assert.assertTrue(rollingTextCurrent !=updatedRollingTextCurrent, "rolling is not happening");
+	    driver.switchTo().defaultContent(); // Switch Back to main Window from Frame
+	    waitForSeconds(1);
+	}
+	
+	/** 
+	* This method Verify Inactivity Logout popup
+	*  Its taking Webdriver  and String as argument
+	* @author Deepak Malviya 
+	*/
+	public void inactivityAutomaticLogout(String userName) 
+	{
+		if(userName.equalsIgnoreCase("HRS"))
+		{
+		  FindElement("xpath", "//div[@class='collapse navbar-collapse bs-navbar-collapse no-padding text-center']//a[contains(text(),'Employees')]").click();
+		}
+		 waitForSeconds(3);
+		BaseClass.waitForMinute(20);
+		 waitForSeconds(2);
+		if(isElementPresent(inactivitypopup) && isElementEnabled(inactivitypopup))
+		{
+		    Assert.assertTrue(isElementPresentByXpath("//div[@class='modal-content']"), "InCativity Dialog is missing");
+		    waitForSeconds(1);
+		    FindElement("xpath", "//button[@class='btn btn-primary']").click();
+		    waitForSeconds(3);
+		    Assert.assertEquals(driver.getTitle(), "MSite - Login");
+		}
+		else
+		{  
+		     Assert.assertFalse(isElementEnabled(inactivitypopup) && isElementPresent(inactivitypopup), "inactivity poppup is open");
+		}
+	}
+	
+	public boolean isElementDisplayed() {
+		boolean display = false;
+		 waitForSeconds(1);
+		try {
+			if (userdropdown.isDisplayed())
+			display = true;
+		} catch (Exception e) {
+			display = false;
+		}
+
+		return display;
+	}
+	/** 
+	* This method Verify Successfull login
+	* @author Deepak Malviya 
+	*/
+	public void verifyLogin() 
+	{
+		if(isElementDisplayed()) 
+		{
+			 waitForSeconds(1);
+			clickOnUser();
+			 waitForSeconds(1);
+			clickOnLogout();
+			waitForSeconds(2);
+		}
+		else 
+		{   
+			 waitForSeconds(1);
+			 Assert.assertTrue(isElementPresent(failedLoginMessage), "Failed Login Message is missing in page");
+		}
+	}
+	
+	public void verifyTitle(String uname) 
+	{
+		  FindElement("xpath", "//a[contains(text(),'System')]").click();
+		 if(isElementPresent(userHrs)) 
+		 {
+			 userHrs.click();
+		 }
+		 else 
+		 {
+			 user.click();
+		 }
+		 waitForSeconds(1);
+		 FindElement("xpath", "//input[@placeholder='Search users...']").sendKeys(uname.toLowerCase());
+		 waitForSeconds(1);
+		 FindElement("xpath", "//td[@class='searchable user-name-list'][contains(text(),'"+uname.toLowerCase()+"')]").click();
+		 waitForSeconds(2);
+		 String firstName=FindElement("id", "FirstName").getAttribute("value");
+		 String lastName=FindElement("id", "LastName").getAttribute("value");
+		 String title=firstName+" "+lastName;
+		 FindElement("xpath", "//button[@class='btn btn-default']").click();
+		 waitForSeconds(2);
+		 FindElement("xpath", "//a[contains(text(),'Dashboard')]").click();
+		 waitForSeconds(2);
+		 if(driver.getTitle().equalsIgnoreCase(""+title+"'s Dashboard - MSite")) 
+		 {
+	    	 Assert.assertTrue(true);
+		  } else 
+	         {
+	    	     Assert.assertTrue(false);
+	    	 }
+	}
+	
+	
+	
+	
+}

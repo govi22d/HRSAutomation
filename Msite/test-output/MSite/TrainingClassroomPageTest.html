@@ -1,0 +1,575 @@
+<html>
+<head>
+<title>TestNG:  TrainingClassroomPageTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TrainingClassroomPageTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 12 16:31:12 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>498 seconds (498136 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_AddIn_AddModule_Created()'><b>training_ClassroomTraining_AddIn_AddModule_Created</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-2036455447" onClick='toggleBox("Output-2036455447", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2036455447" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2036455447">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Clicking on Add Button in Module , Module Added in Module Section and dailog is closed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_AddModuleWith_NoTitle_NotCreated()'><b>training_ClassroomTraining_AddModuleWith_NoTitle_NotCreated</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1725298318" onClick='toggleBox("Output-1725298318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725298318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725298318">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Adding Module with no Title ,no module is added and Tilte filed is highlighted in Red Color<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_BrowseCourse_FoundCourse()'><b>training_ClassroomTraining_BrowseCourse_FoundCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-410964463" onClick='toggleBox("Output-410964463", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-410964463" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-410964463">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Browse Course Page and Verifying Courses<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_BrowseCourse_NoCourseFound()'><b>training_ClassroomTraining_BrowseCourse_NoCourseFound</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1455168378" onClick='toggleBox("Output-1455168378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1455168378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1455168378">
+User Logged In successfully<br/>
+Open Training Dropdown<br/>
+Open Classroom Training and Verifying No Course Found In Browse Course<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CancelInCreate_And_Unpublish_NewClassroomCourse()'><b>training_ClassroomTraining_CancelInCreate_And_Unpublish_NewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-100510528" onClick='toggleBox("Output-100510528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-100510528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-100510528">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Click on Cancel in Unpublish Add New Classroom Course ,Verifying No Course is added<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CancelIn_AddModule_NotCreated()'><b>training_ClassroomTraining_CancelIn_AddModule_NotCreated</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-2134889017" onClick='toggleBox("Output-2134889017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2134889017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2134889017">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Clicking on Cancel Button in Module ,no module Added and dailog is closed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CancelIn_DeleteCourse()'><b>training_ClassroomTraining_CancelIn_DeleteCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1066288153" onClick='toggleBox("Output-1066288153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1066288153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066288153">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening a Course from Browse Courses<br/>
+Clicking on Cancel in Delete course Dailog , No Course is deleted<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CancelIn_DeleteModule_InNewClassroomCourse()'><b>training_ClassroomTraining_CancelIn_DeleteModule_InNewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-475915905" onClick='toggleBox("Output-475915905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-475915905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-475915905">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Clicking on Cancel in Delete Module Dialog ,Module is not deleted<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CourseWithData_CancelInDiscardChanges()'><b>training_ClassroomTraining_CourseWithData_CancelInDiscardChanges</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1645989452" onClick='toggleBox("Output-1645989452", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1645989452" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1645989452">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Click On Cancel In Discard Change Dailog with Data , Dailog is closed and no change takes Places<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CourseWithData_DiscardInDiscardChanges()'><b>training_ClassroomTraining_CourseWithData_DiscardInDiscardChanges</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-93189570" onClick='toggleBox("Output-93189570", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-93189570" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-93189570">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Click On Discard In Discard Change Dailog with Data , Dailog is closed and no change takes Places<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CreateEmpty_NewClassroomCourse_NotAdded()'><b>training_ClassroomTraining_CreateEmpty_NewClassroomCourse_NotAdded</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1701569858" onClick='toggleBox("Output-1701569858", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1701569858" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1701569858">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Adding Empty New Classroom Course<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_CreateWith_InvalidValidadityDays_NewClassroomCourse_NotCreated()'><b>training_ClassroomTraining_CreateWith_InvalidValidadityDays_NewClassroomCourse_NotCreated</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-179037306" onClick='toggleBox("Output-179037306", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-179037306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-179037306">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Verifying Invalid Validity Period Days are not Added ,Field is Highlighted in Red Color <br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_Create_And_Publish_NewClassroomCourse()'><b>training_ClassroomTraining_Create_And_Publish_NewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1801398099" onClick='toggleBox("Output-1801398099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1801398099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1801398099">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Clicking on Create in Publish Add New Classroom Course ,Verifying New Course is added in courseList<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_Create_And_Unpublish_NewClassroomCourse()'><b>training_ClassroomTraining_Create_And_Unpublish_NewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-866735960" onClick='toggleBox("Output-866735960", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-866735960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-866735960">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Clicking on Create in Unpublish Add New Classroom Course ,Verifying New Course is added in courseList<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_DeleteIn_DeleteCourse()'><b>training_ClassroomTraining_DeleteIn_DeleteCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1836305130" onClick='toggleBox("Output-1836305130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1836305130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1836305130">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Clicking on Delete in Delete course Dailog , Selected  Course is deleted<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_DeleteIn_DeleteModule_InNewClassroomCourse()'><b>training_ClassroomTraining_DeleteIn_DeleteModule_InNewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-346272079" onClick='toggleBox("Output-346272079", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-346272079" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-346272079">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Clicking on Delete in Delete Module Dialog ,Module is deleted<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_EditCourse()'><b>training_ClassroomTraining_EditCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1534487166" onClick='toggleBox("Output-1534487166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1534487166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1534487166">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Browse Course Page and open A Course<br/>
+Editing a Course and Veriying Edited Course in Browse Course<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_EditModule_InNewClassroomCourse()'><b>training_ClassroomTraining_EditModule_InNewClassroomCourse</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1923376019" onClick='toggleBox("Output-1923376019", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1923376019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1923376019">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Editing Module in Add new Classrooom Course,and verifying Edited Module<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_EmptyCourse_CancelInDiscardChanges()'><b>training_ClassroomTraining_EmptyCourse_CancelInDiscardChanges</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1215616862" onClick='toggleBox("Output-1215616862", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215616862" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215616862">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Click On Cancel In Discard Change Dailog , Dailog is closed and no change takes Places<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_EmptyCourse_DiscardInDiscardChanges()'><b>training_ClassroomTraining_EmptyCourse_DiscardInDiscardChanges</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1656249908" onClick='toggleBox("Output-1656249908", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1656249908" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1656249908">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Click On Discard In Discard Change Dailog , Dailog is closed and no change takes Places<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_OpenBrowseCourse_And_VerifyAllElement()'><b>training_ClassroomTraining_OpenBrowseCourse_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1298608433" onClick='toggleBox("Output-1298608433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1298608433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1298608433">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Browse Course Page and Verifying alll Available Elements and Course<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_OpenReport_And_VerifyAllElement()'><b>training_ClassroomTraining_OpenReport_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1567038734" onClick='toggleBox("Output-1567038734", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567038734" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567038734">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Report Course Page and Verifying All Avialbale Element <br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_OpenReport_And_VerifyTitle()'><b>training_ClassroomTraining_OpenReport_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1038082573" onClick='toggleBox("Output-1038082573", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1038082573" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1038082573">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Report Page and Verifying  report Page Tilte <br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_OpenSessionReport_And_VerifyTitle()'><b>training_ClassroomTraining_OpenSessionReport_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1365134973" onClick='toggleBox("Output-1365134973", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365134973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365134973">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Report Page<br/>
+Opening  Session Report Page AnD Verifying Title<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_OpenTrainingReport_And_VerifyTitle()'><b>training_ClassroomTraining_OpenTrainingReport_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-822132876" onClick='toggleBox("Output-822132876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-822132876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-822132876">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Report Page<br/>
+Opening  Training Report Page AnD Verifying Title<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_Open_AddNewClassroomCourse_And_VerifyAllElement()'><b>training_ClassroomTraining_Open_AddNewClassroomCourse_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-133605211" onClick='toggleBox("Output-133605211", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-133605211" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-133605211">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classroom Training <br/>
+Open New Classroom Course and Verifying All Avialable Element in Page<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_VerifyEmptyModule_NewClassroomCourse_NotCreated()'><b>training_ClassroomTraining_VerifyEmptyModule_NewClassroomCourse_NotCreated</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-987630911" onClick='toggleBox("Output-987630911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-987630911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-987630911">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Add New Classroom Course Page<br/>
+Verifying Empty Module In Add new Classroom Course<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_ViewCourse_And_VerifyAllElement()'><b>training_ClassroomTraining_ViewCourse_And_VerifyAllElement</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-180829405" onClick='toggleBox("Output-180829405", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-180829405" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-180829405">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Open Browse Course Page<br/>
+Opening A Course From Browse Course and Verifying Data match From Browse Course to View Course<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_ClassroomTraining_ViewCourse_And_VerifyTitle()'><b>training_ClassroomTraining_ViewCourse_And_VerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-471192303" onClick='toggleBox("Output-471192303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-471192303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-471192303">
+User Logged In successfully<br/>
+Click on Training Dropdown and Open Classrooom Training<br/>
+Opening Browse Course Page<br/>
+Open any Course and Verifying View Course Page<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_OpenClassroomTrainingFromDropDown_And_VerifyAllElementPresent()'><b>training_OpenClassroomTrainingFromDropDown_And_VerifyAllElementPresent</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-975347430" onClick='toggleBox("Output-975347430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-975347430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-975347430">
+User Logged In successfully<br/>
+Open Training Dropdown<br/>
+Open Classroom Training and Verifying All Avialble Element in Classroom Page<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_OpenClassroomTrainingFromDropDown_And_VerifyTilte()'><b>training_OpenClassroomTrainingFromDropDown_And_VerifyTilte</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1944270624" onClick='toggleBox("Output-1944270624", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944270624" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944270624">
+User Logged In successfully<br/>
+Open Training Dropdown<br/>
+Open Classroom Training and Verifying Title<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_OpenTrainingDropdown()'><b>training_OpenTrainingDropdown</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-2027549967" onClick='toggleBox("Output-2027549967", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2027549967" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2027549967">
+User Logged In successfully<br/>
+Opening Training Dropdown<br/>
+Verifying Dropdown Content<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_OpenTrainingWithoutTraining_AndVerifyTitle()'><b>training_OpenTrainingWithoutTraining_AndVerifyTitle</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-1394738759" onClick='toggleBox("Output-1394738759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1394738759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1394738759">
+User Logged In successfully<br/>
+Diasabling Online Induction from System Setting<br/>
+Diasabling Classroom Training from System Setting<br/>
+opening Training Page and Verifying title<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+<tr>
+<td title='com.Msite.TestScripts.TrainingClassroomPageTest.training_VerifyEmptyTraining()'><b>training_VerifyEmptyTraining</b><br>Test class: com.Msite.TestScripts.TrainingClassroomPageTest<br/>
+<a href="#Output-2134707893" onClick='toggleBox("Output-2134707893", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2134707893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2134707893">
+User Logged In successfully<br/>
+Open Training Page and Verifying Empty Training<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>com.Msite.TestScripts.TrainingClassroomPageTest@7e0b0338</td></tr>
+</table><p>
+</body>
+</html>

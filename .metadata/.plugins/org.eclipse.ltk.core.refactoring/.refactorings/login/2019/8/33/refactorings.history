@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.page.login.App&apos; to &apos;baseSetUp&apos;&#x0D;&#x0A;- Original project: &apos;login&apos;&#x0D;&#x0A;- Original element: &apos;test.page.login.App&apos;&#x0D;&#x0A;- Renamed element: &apos;test.page.login.baseSetUp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;App&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;test.page.login{App.java[App" matchStrategy="1" name="baseSetUp" qualified="false" references="true" similarDeclarations="false" stamp="1565965534626" textual="false" version="1.0"/>
+</session>

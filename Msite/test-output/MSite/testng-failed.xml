@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MSite]">
+  <listeners>
+    <listener class-name="com.Msite.Utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="EmployeesPageTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.Msite.TestScripts.EmployeesPageTest">
+        <methods>
+          <include name="employee_EnabledBiometricConsentInSetting_And_CheckBiometricConsentStatusInEmployee"/>
+          <include name="employee_ViewProgress_SeachByContractor"/>
+          <include name="employee_ViewProgress_UnublishTrainingCourse_And_CheckPrerequisiteTrainingColumnData"/>
+          <include name="employees_Open_AddNewEmployee_Empty"/>
+          <include name="employee_ViewProgress_ReloadWithFillingAnyDetails"/>
+          <include name="employee_OpenEmployee_And_CancelInRestrictAccess"/>
+          <include name="employee_Open_AccessAndAttendenceException_InEmployeeStatusSummaryContainer"/>
+          <include name="employee_AddNewEmployee_Delete_NextOfKin"/>
+          <include name="employees_BrowseEmployee_LastNameSearch"/>
+          <include name="employee_ViewProgress_SeachWithoutFillingAnyDetails"/>
+          <include name="employee_ViewProgress_SeachByFirstName"/>
+          <include name="employee_OpenAndEditEmployee_CancelInDiscardChanges"/>
+          <include name="employee_AddPhotoByCameraAndRetake"/>
+          <include name="employee_AddNewEmployee_CancelInDelete_NextOfKin"/>
+          <include name="employee_AddNewEmployee_NoInduction_ManageSiteSection"/>
+          <include name="employee_InviteEmployee_Search_AndReload"/>
+          <include name="employee_InviteNewEmployee_Individual"/>
+          <include name="employee_EnabledLockContractorInSetting_And_ViewContractorHistory"/>
+          <include name="employee_AddNewEmployee_DuplicateDialogBoxForAddingExistinEmployee"/>
+          <include name="employee_Delete_InDeleteEmployee"/>
+          <include name="employee_InviteEmployee_Search_ByFirstName"/>
+          <include name="employee_ViewProgress_ReloadWithoutFillingAnyDetails"/>
+          <include name="employee_Edit_MedicalConditionInEmployee"/>
+          <include name="employee_InviteEmployee_Search_ByName"/>
+          <include name="employee_EditAttachmentInEmployee"/>
+          <include name="employee_ViewProgress_Enabled_DataProtectionVisibilityFromSettingAndCheck"/>
+          <include name="employees_Open_AddNewEmployee_And_VerifyAllElement"/>
+          <include name="setUp"/>
+          <include name="employee_AddNewEmployee_Delete_ManageSiteSection"/>
+          <include name="employee_OpenInviteEmployee_And_VerifyAllElement"/>
+          <include name="employee_Delete_MedicalConditionInEmployee"/>
+          <include name="employee_ViewProgress_Cancel_IncancelInductionBooking"/>
+          <include name="employee_OpenEmployee_And_RemoveInFixAccessIssue"/>
+          <include name="employees_BrowseEmployee_WithoutAnyDetailSearch"/>
+          <include name="employee_OpenEmployee_And_AddInAddIncident"/>
+          <include name="employee_OpenEmployee_And_CancelInAddIncident"/>
+          <include name="employees_BrowseEmployee_FillAnyDetail_Relaod"/>
+          <include name="employee_InviteEmployee_Search_ByLastName"/>
+          <include name="employee_AddNewEmployee_Inducted_ManageSiteSection"/>
+          <include name="employee_AddAttachmentInEmployee"/>
+          <include name="employee_Disable_MedicalConditionInSetting_And_CheckMedicalConditionSectionVisibilityInEmployee"/>
+          <include name="employee_ViewProgress_SeachByName"/>
+          <include name="employee_DisabledLockContractorInSetting_And_ViewContractorHistory"/>
+          <include name="employee_OpenAndEditEmployee_DiscardInDiscardChanges"/>
+          <include name="employees_BrowseEmployee_ContractorSearch"/>
+          <include name="employees_ReviewEmployee_And_VerifyEachAvailableElement"/>
+          <include name="employee_ViewProgress_VerifySearchResultHeadings"/>
+          <include name="employee_Open_TrainingException_InEmployeeStatusSummaryContainer"/>
+          <include name="employee_Cancel_InDeleteEmployee"/>
+          <include name="employee_ViewProgress_Yes_InCancelInductionBooking"/>
+          <include name="employees_Open_AddNewEmployee_CancelInReloadDailog"/>
+          <include name="employee_OpenEmployee_And_SaveInManagePinEntry"/>
+          <include name="employee_SearchEmployee_AndCancelInInviteEmployee"/>
+          <include name="employee_AddNewEmployee_Edit_ManageSiteSection"/>
+          <include name="employee_OpenEmployee_And_AddManualPunchWithoutDoor"/>
+          <include name="employee_Open_InductionBookingException_InEmployeeStatusSummaryContainer"/>
+          <include name="employees_BrowseEmployee_ByNameSearch"/>
+          <include name="employee_InviteEmployee_Search_ByContractor"/>
+          <include name="tearDown"/>
+          <include name="employee_InviteNewEmployee_BulkWithoutFillingAnyDetails"/>
+          <include name="employee_SearchEmployee_And_InviteEmployee"/>
+          <include name="employee_OpenEmployee_And_CancelInManagePinEntry"/>
+          <include name="employee_AddPhotoByCamera"/>
+          <include name="employee_ViewProgress_PublishTrainingCourse_And_CheckPrerequisiteTrainingColumnData"/>
+          <include name="employee_ViewProgress_ChangeInviteDateAndSearch"/>
+          <include name="employee_Enable_MedicalConditionInSetting_And_CheckMedicalConditionSectionVisibilityInEmployee"/>
+          <include name="employee_InviteNewEmployee_InBulk"/>
+          <include name="employee_AddNewEmployee_Edit_NextOfKin"/>
+          <include name="employee_Cancel_AttachmentInEmployee"/>
+          <include name="employee_DisabledBiometricConsentInSetting_And_CheckBiometricConsentStatusInEmployee"/>
+          <include name="employees_BrowseEmployee_BioIdSearch"/>
+          <include name="employee_Delete_AttachmentInEmployee"/>
+          <include name="employees_InviteNewEmployee_IndividualColapses"/>
+          <include name="employee_ViewProgress_Disabled_DataProtectionVisibilityFromSettingAndCheck"/>
+          <include name="employees_Open_AddNewEmployee_ReloadInReloadDailog"/>
+          <include name="employees_BrowseEmployee_Colapses"/>
+          <include name="employee_OpenAndEditEmployee"/>
+          <include name="employee_OpenViewProgress_And_VerifyAllElementsInViewProgress"/>
+          <include name="employee_OpenEmployee_And_ViewViewSummary"/>
+          <include name="employee_ViewProgress_SeachByLastName"/>
+          <include name="employee_AddNewEmployee_Empty_ManageSiteSection"/>
+          <include name="employee_ViewProgress_ViewInductionBooking"/>
+          <include name="employees_BrowseEmployee_FirstNameSearch"/>
+          <include name="employee_AddPhotoByUploadPhoto"/>
+          <include name="employee_OpenInviteNewEmployee_And_VerifyAllElement"/>
+          <include name="employees_Open_AddNewEmployee_SaveChangesButton"/>
+          <include name="employee_AddNewEmployee_CancelInDelete_ManageSiteSection"/>
+          <include name="employee_OpenEmployee_And_AddInRestrictAccess"/>
+          <include name="employees_OpenEmployees"/>
+          <include name="employee_Open_Emplyoee_InEmployeeStatusSummaryContainer"/>
+          <include name="employee_InviteNewEmployee_IndividualWithoutFillingAnyDetails"/>
+          <include name="employee_Open_IDCheckException_InEmployeeStatusSummaryContainer"/>
+          <include name="employees_BrowseEmployee_ContentCheck"/>
+          <include name="employee_AddNewEmployee_InAddNewemployee"/>
+          <include name="employee_OpenEmployee_And_CheckAccessRestrictionHistory"/>
+          <include name="employee_Open_AccreditationException_InEmployeeStatusSummaryContainer"/>
+          <include name="employees_InviteNewEmployee_BulkColapses"/>
+          <include name="employee_OpenEmployee_And_CancelInFixAccessIssue"/>
+        </methods>
+      </class> <!-- com.Msite.TestScripts.EmployeesPageTest -->
+    </classes>
+  </test> <!-- EmployeesPageTest(failed) -->
+</suite> <!-- Failed suite [MSite] -->
